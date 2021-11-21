@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Animal Kingdom: Maggie</title>
+    <link rel="icon" type="image/png" href="images/cat.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="lyla.html">Lyla</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="archie.html">Archie</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="jughead.html">Jughead</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="maggie.html">Maggie</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="videos.html">Videos</a>
+                </div> 
+            </div>
+            <div class="right-side">
+                <div class="web-name">
+                    <div>My Animal Kingdom</div>
+                </div>
+            </div>
+        </div>
+    <div class="content-wrapper">
+        <div class="two-column-wrapper">
+            <div class="img-wrapper">
+                <img id="myImg" src="images\Animals\maggie1.jpg" alt="Maggie"
+                 style=width:450px; height: 350px;>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        
+            <script>
+                let modal = document.getElementById('myModal');
+                let img = document.getElementById('myImg');
+                let modalImg = document.getElementById("img01");
+                let captionText = document.getElementById("caption");
+                img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                }
+                
+                let span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+            </script>
+            <div class="page-content">
+                <h1>Maggie the Cat</h1>
+                <p>Maggie is an 11 year old, Toirtoiseshell cat that we recieved last July when my Aunt 
+                    became too sick to take care of her. Two months later, my aunt passed away and Maggie
+                    found her forever home with us. Maggie is a very independent cat who spends most of her 
+                    time sleeping in her bed or hanging out on her cat tree. She loves being up high and you
+                    will constantly find her on top of the counters and the cabinents. Maggie is a very vocal
+                    young lady who has quite the personality. We often say that she is cranky because her standard
+                    meow sounds as if she is complaining about your existence in her life. Maggie loves drinking from
+                    the faucet and she will make sure that you know when it is time for you to turn it on. She loves being brushed,
+                    sitting on your lap, and looking out the windows. Although she would never admit it, she loves her sister Lyla
+                    very much and always watches her from a safe distance. We are so lucky to have Maggie in our lives.  &#x1F408
+                </p>
+            </div>
+        </div>    
+    <footer>
+        <small>&copy; Copyright 2021, My Animal Kingdom LLC</small> 
+    </footer> 
+</body>
+</html>

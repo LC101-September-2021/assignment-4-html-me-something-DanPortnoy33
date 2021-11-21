@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Animal Kingdo: Lyla</title>
+    <link rel="icon" type="image/png" href="images/cat.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="lyla.html">Lyla</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="archie.html">Archie</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="jughead.html">Jughead</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="maggie.html">Maggie</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="videos.html">Videos</a>
+                </div> 
+            </div>
+            <div class="right-side">
+                <div class="web-name">
+                    <div>My Animal Kingdom</div>
+                </div>
+            </div>
+        </div>
+    <div class="content-wrapper">
+        <div class="two-column-wrapper">
+            <div class="img-wrapper">
+                <img id="myImg" src="images\Animals\lyla3.jpg" alt="Lyla"
+                 style=width:450px; height: 350px;>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        
+            <script>
+                let modal = document.getElementById('myModal');
+                let img = document.getElementById('myImg');
+                let modalImg = document.getElementById("img01");
+                let captionText = document.getElementById("caption");
+                img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                }
+                
+                let span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+            </script>
+            <div class="page-content">
+                <h1>Lyla the Pup</h1>
+                <p>Lyla is a 7 year old lab-boxer mix that became part of our family on March 14th, 2014. 
+                    Lyla is the sweetest dog that you will ever meet; she enjoys long cuddle sessions right
+                    when she wakes up in the morning and when its time to go to bed. Although being 65lbs,
+                    Lyla is not very spacially aware and she believes that she is still a lap-dog. She can be found
+                    constantly trying to get onto your lap or attempting to lay on top of you when you are lying
+                    down. She loves giving the kisses to both humans and dogs alike. Despite being a sweetie at heart,
+                    Lyla is very protective of her home. One of Lyla's favorite things to do is to sit on the porch and
+                    wait for people or other dogs to walk by just so she can bark at them. She gets very excited when they
+                    come by so much so that the hair on her back stands up creating a mowhawk. Lyla's mortal enemy is the mailman
+                    and the multiple UPS and Fedex delivery drivers that work in our neighborhood. Lyla absolutely loves walks, treats,
+                    and meal time. She is on a special diet of weightloss kibble, carrots and on occassion canned pumpkin and mashed potatoes.
+                    Lyla is a pup at heart in every way; her favorite activites include playing with her stuffed pig,
+                    Mr. Oinkers, chewing on her plastic bones, going on long walks in the neighborhood, going to the park, and 
+                    playing with the neighbor's dogs, Ottie and Bean. Lyla has an Uncle Steve, an Uncle Brian, and a Grandma who all love
+                    her very much. Lyla also loves her momma and gets very excited every Saturday when her mom comes to see her. Despite 
+                    her active nature, Lyla has never shied away from a good nap. She loves napping with daddy or taking solo naps
+                    on her dog bed or her couch. Lyla also loves her sister Maggie very much, but oftentimes she forgets just how little Maggie 
+                    is and ends up just chasing her away. Lyla truly is the best friend anyone could ever ask for, and were so lucky to have her in our lives. &#x1F43E;  
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <small>&copy; Copyright 2021, My Animal Kingdom LLC</small> 
+    </footer> 
+</body>
+</html>

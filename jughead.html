@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Animal Kingdom: Jughead</title>
+    <link rel="icon" type="image/png" href="images/cat.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="lyla.html">Lyla</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="archie.html">Archie</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="jughead.html">Jughead</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="maggie.html">Maggie</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="videos.html">Videos</a>
+                </div> 
+            </div>
+            <div class="right-side">
+                <div class="web-name">
+                    <div>My Animal Kingdom</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="two-column-wrapper">
+            <div class="img-wrapper">
+                <img id="myImg" src="images\Animals\jug2.jpg" alt="Jughead"
+                 style=width:450px; height: 250px;>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
+        
+            <script>
+                let modal = document.getElementById('myModal');
+                let img = document.getElementById('myImg');
+                let modalImg = document.getElementById("img01");
+                let captionText = document.getElementById("caption");
+                img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                }
+                
+                let span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+            </script>
+            <div class="page-content">
+                <h1>Jughead the Cat</h1>
+                <p>Jughead is a one year old tabby cat, that my girlfriend adopted last August. 
+                    He was the cutest little kitten that you would ever meet and has grown up into
+                    the most well-behaved and handsome boy. Jughead is my girlfriend's best friend and he holds a 
+                    special place in my heart as well. Jug loves playing with his toys, watching the 
+                    world go by out the window, and playing with his brother Archie. Although Archie is
+                    in fact Jughead's brother by adoption, Jug doesn't really view him that way. To Jug
+                    Archie is a toy (his favorite one) that he can play with, wrestle with and attack whenever he likes.
+                    Before Archie came into the picture Jughead would always try to hide and pop out to attack us, but 
+                    now that Archie is here Jug's primary focus is hunting Archie. Luckily Archie enjoys being hunted
+                    by Jug and the two are literally inseperable. They eat together, use the litter box together,
+                    sleep at the same time, and are constantly playing with eachother. They truly are eachother's bestfriends.
+                    Jug also enjoys making bird noises and chirping at every turn. In the morning Jughead will come up to 
+                    you, get on your chest, and meow in your face until you are awake. We truly are just both living in
+                    Jug's world and there's nothing we would change about it.  &#x1F408
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <small>&copy; Copyright 2021, My Animal Kingdom LLC</small> 
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Animal Kingdom: Archie</title>
+    <link rel="icon" type="image/png" href="images/cat.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="lyla.html">Lyla</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="archie.html">Archie</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="jughead.html">Jughead</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="maggie.html">Maggie</a>
+                </div> 
+                <div class="nav-link-wrapper">
+                    <a href="videos.html">Videos</a>
+                </div> 
+            </div>
+            <div class="right-side">
+                <div class="web-name">
+                    <div>My Animal Kingdom</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="two-column-wrapper">
+            <div class="img-wrapper">
+                <img id="myImg" src="images\Animals\archie4.jpg" alt="Archie"
+                 style=width:450px; height: 350px;>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        
+            <script>
+                let modal = document.getElementById('myModal');
+                let img = document.getElementById('myImg');
+                let modalImg = document.getElementById("img01");
+                let captionText = document.getElementById("caption");
+                img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                }
+                
+                let span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+            </script>
+            <div class="funParagraph">
+                <h1>Archie the Cat</h1>
+                <p>Archie is a one year old tabby cat that my girlfriend adopted from MauHouse this year. 
+                    He is a glutton who loves to eat non-stop and drink from both the faucet and his fountain.
+                    Despite being a head shorter than Jughead, Archie loves to play and wrestle with his brother. 
+                    Archie's fearless and curious nature often lands him in loads of trouble with mom as he loves
+                    to attempt to jump on anything that he can see no matter how tall or unsturdy. He loves playing with his
+                    toys some of which include his electric butterfly, his laser, his taco, his leash, and even mom and
+                    dad themselves. Despite his reckless affinity for biting mom and dad's hands and arms whenever visible, Archie
+                    is a very sweet cat. He can often be found standing at your feet, weaving in and out of your legs as you walk and wrapping his
+                    tail around them as you go. He loves snuggling with his momma and dadda and on occassion will even attempt to jump into his
+                    brother's hammock to get some snuggs from him as well.  &#x1F408    
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <small>&copy; Copyright 2021, My Animal Kingdom LLC</small> 
+    </footer>   
+</body>
+</html>
